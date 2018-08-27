@@ -1,519 +1,5 @@
 export class ECommerceFakeDb
 {
-    public static dashboard = {
-        'widget1': {
-            'ranges'      : {
-                'DY' : 'Yesterday',
-                'DT' : 'Today',
-                'DTM': 'Tomorrow'
-            },
-            'currentRange': 'DT',
-            'data'        : {
-                'label': 'CONVERSION RATE',
-                'count': {
-                    'DY' : 21,
-                    'DT' : 25,
-                    'DTM': 19
-                },
-                'extra': {
-                    'label': 'Abandoned carts',
-                    'count': {
-                        'DY' : 3,
-                        'DT' : 7,
-                        'DTM': 8
-                    }
-                }
-            },
-            'detail'      : 'You can show some detailed information about this widget in here.'
-        },
-        'widget2': {
-            'title' : 'Average Order Value',
-            'data'  : {
-                'label': '30 DAYS',
-                'count': 21,
-                'extra': {
-                    'label': 'Last year same time',
-                    'count': 14
-                }
-            },
-            'detail': 'You can show some detailed information about this widget in here.'
-        },
-        'widget3': {
-            'title' : 'Online Visitors',
-            'data'  : {
-                'label': 'last 30 minutes',
-                'count': 32,
-                'extra': {
-                    'label': 'Total visitors today',
-                    'count': 998
-                }
-            },
-            'detail': 'You can show some detailed information about this widget in here.'
-        },
-        'widget4': {
-            'title' : 'Profit per Visitor',
-            'data'  : {
-                'label': 'TODAY',
-                'count': '3,7',
-                'extra': {
-                    'label': 'Yesterday',
-                    'count': '2,90'
-                }
-            },
-            'detail': 'You can show some detailed information about this widget in here.'
-        },
-        'widget5': {
-            'title'    : 'Sales',
-            'ranges'   : {
-                'TW': 'This Week',
-                'LW': 'Last Week',
-                '2W': '2 Weeks Ago'
-            },
-            'mainChart': {
-                '2W': [
-                    {
-                        'name'  : 'Mon',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 9
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 37
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Tue',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 12
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 32
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Wed',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 9
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 39
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Thu',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 12
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 27
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Fri',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 7
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 18
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Sat',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 8
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 24
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Sun',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 16
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 20
-                            }
-                        ]
-                    }
-                ],
-                'LW': [
-                    {
-                        'name'  : 'Mon',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 12
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 37
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Tue',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 8
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 24
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Wed',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 7
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 51
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Thu',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 13
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 31
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Fri',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 7
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 29
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Sat',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 6
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 17
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Sun',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 10
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 31
-                            }
-                        ]
-                    }
-                ],
-                'TW': [
-                    {
-                        'name'  : 'Mon',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 11
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 42
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Tue',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 10
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 28
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Wed',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 8
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 43
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Thu',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 11
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 34
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Fri',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 8
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 20
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Sat',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 10
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 25
-                            }
-                        ]
-                    },
-                    {
-                        'name'  : 'Sun',
-                        'series': [
-                            {
-                                'name' : 'Sales',
-                                'value': 17
-                            },
-                            {
-                                'name' : 'Abandoned Carts',
-                                'value': 22
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        'widget6': {
-            'title'      : 'Top 5 Categories',
-            'ranges'     : {
-                'TW': 'This Week',
-                'LW': 'Last Week',
-                '2W': '2 Weeks Ago'
-            },
-            'mainChart'  : {
-                '2W': [
-                    {
-                        'name' : 'Women Dresses',
-                        'value': 18
-                    },
-                    {
-                        'name' : 'Men Shoes',
-                        'value': 12
-                    },
-                    {
-                        'name' : 'Women Shoes',
-                        'value': 40
-                    },
-                    {
-                        'name' : 'Women Bags',
-                        'value': 20
-                    },
-                    {
-                        'name' : 'Men T-Shirts',
-                        'value': 10
-                    }
-                ],
-                'LW': [
-                    {
-                        'name' : 'Women Dresses',
-                        'value': 17
-                    },
-                    {
-                        'name' : 'Men Shoes',
-                        'value': 14
-                    },
-                    {
-                        'name' : 'Women Shoes',
-                        'value': 36
-                    },
-                    {
-                        'name' : 'Women Bags',
-                        'value': 23
-                    },
-                    {
-                        'name' : 'Men T-Shirts',
-                        'value': 12
-                    }
-                ],
-                'TW': [
-                    {
-                        'name' : 'Women Dresses',
-                        'value': 13
-                    },
-                    {
-                        'name' : 'Men Shoes',
-                        'value': 16
-                    },
-                    {
-                        'name' : 'Women Shoes',
-                        'value': 34
-                    },
-                    {
-                        'name' : 'Women Bags',
-                        'value': 23
-                    },
-                    {
-                        'name' : 'Men T-Shirts',
-                        'value': 14
-                    }
-                ]
-            },
-            'footerLeft' : {
-                'title': 'Total Sales',
-                'count': {
-                    '2W': 487,
-                    'LW': 526,
-                    'TW': 594
-                }
-            },
-            'footerRight': {
-                'title': 'Sales From Top 5 Categories',
-                'count': {
-                    '2W': 193,
-                    'LW': 260,
-                    'TW': 287
-                }
-            }
-        },
-        'widget7': {
-            'title'    : 'Latest Customers',
-            'ranges'   : {
-                'T' : 'Today',
-                'TM': 'Tomorrow'
-            },
-            'customers': {
-                'T' : [
-                    {
-                        'name'    : 'Abbott Keitch',
-                        'location': 'United States of America'
-                    },
-                    {
-                        'name'    : 'Arnold Matlock',
-                        'location': 'United States of America'
-                    },
-                    {
-                        'name'    : 'Barrera Bradbury',
-                        'location': 'England'
-                    },
-                    {
-                        'name'    : 'Blair Strangeway',
-                        'location': 'Germany'
-                    },
-                    {
-                        'name'    : 'Copeland Redcliff',
-                        'location': 'French'
-                    },
-                    {
-                        'name'    : 'Henderson Cambias',
-                        'location': 'Russia'
-                    },
-                    {
-                        'name'    : 'Lily Peasegood',
-                        'location': 'Mexico'
-                    }
-                ],
-                'TM': [
-                    {
-                        'name'    : 'Boyle Winters',
-                        'location': 'United States of America'
-                    },
-                    {
-                        'name'    : 'Tyson Marshall',
-                        'location': 'United States of America'
-                    },
-                    {
-                        'name'    : 'Reyna Preece',
-                        'location': 'England'
-                    },
-                    {
-                        'name'    : 'Shauna Atherton',
-                        'location': 'Germany'
-                    },
-                    {
-                        'name'    : 'Tillman Lee',
-                        'location': 'French'
-                    },
-                    {
-                        'name'    : 'Velazquez Smethley',
-                        'location': 'Russia'
-                    },
-                    {
-                        'name'    : 'Helen Sheridan',
-                        'location': 'Mexico'
-                    }
-                ]
-            }
-        }
-    };
-
     public static products = [
         {
             'id'              : '1',
@@ -2136,13 +1622,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 13,
                     'name' : 'On pre-order (not paid)',
-                    'color': 'mat-purple-300-bg',
+                    'color': 'purple-300',
                     'date' : '2016/04/03 10:06:18'
                 },
                 {
                     'id'   : 1,
                     'name' : 'Awaiting check payment',
-                    'color': 'mat-blue-500-bg',
+                    'color': 'blue-500',
                     'date' : '2015/03/17 18:28:37'
                 }
             ],
@@ -2220,13 +1706,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 2,
                     'name' : 'Payment accepted',
-                    'color': 'mat-green-500-bg',
+                    'color': 'green-500',
                     'date' : '2015/10/04 08:54:33'
                 },
                 {
                     'id'   : 1,
                     'name' : 'Awaiting check payment',
-                    'color': 'mat-blue-500-bg',
+                    'color': 'blue-500',
                     'date' : '2015/05/03 03:43:04'
                 }
             ],
@@ -2304,13 +1790,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 8,
                     'name' : 'Payment error',
-                    'color': 'mat-red-900-bg',
+                    'color': 'red-900',
                     'date' : '2015/07/02 20:44:34'
                 },
                 {
                     'id'   : 3,
                     'name' : 'Preparing the order',
-                    'color': 'mat-orange-500-bg',
+                    'color': 'orange-500',
                     'date' : '2015/03/23 04:59:45'
                 }
             ],
@@ -2388,13 +1874,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 5,
                     'name' : 'Delivered',
-                    'color': 'mat-green-800-bg',
+                    'color': 'green-800',
                     'date' : '2015/10/26 16:12:47'
                 },
                 {
                     'id'   : 4,
                     'name' : 'Shipped',
-                    'color': 'mat-purple-500-bg',
+                    'color': 'purple-500',
                     'date' : '2016/02/06 06:42:37'
                 }
             ],
@@ -2472,13 +1958,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 8,
                     'name' : 'Payment error',
-                    'color': 'mat-red-900-bg',
+                    'color': 'red-900',
                     'date' : '2015/02/01 09:21:46'
                 },
                 {
                     'id'   : 6,
                     'name' : 'Canceled',
-                    'color': 'mat-pink-500-bg',
+                    'color': 'pink-500',
                     'date' : '2015/11/16 04:48:32'
                 }
             ],
@@ -2556,13 +2042,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 3,
                     'name' : 'Preparing the order',
-                    'color': 'mat-orange-500-bg',
+                    'color': 'orange-500',
                     'date' : '2015/11/30 01:04:32'
                 },
                 {
                     'id'   : 2,
                     'name' : 'Payment accepted',
-                    'color': 'mat-green-500-bg',
+                    'color': 'green-500',
                     'date' : '2015/11/12 21:27:18'
                 }
             ],
@@ -2640,13 +2126,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 11,
                     'name' : 'Awaiting PayPal payment',
-                    'color': 'mat-blue-500-bg',
+                    'color': 'blue-500',
                     'date' : '2015/09/03 18:53:02'
                 },
                 {
                     'id'   : 13,
                     'name' : 'On pre-order (not paid)',
-                    'color': 'mat-purple-300-bg',
+                    'color': 'purple-300',
                     'date' : '2015/12/13 18:14:40'
                 }
             ],
@@ -2724,13 +2210,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 4,
                     'name' : 'Shipped',
-                    'color': 'mat-purple-500-bg',
+                    'color': 'purple-500',
                     'date' : '2015/04/29 07:57:43'
                 },
                 {
                     'id'   : 3,
                     'name' : 'Preparing the order',
-                    'color': 'mat-orange-500-bg',
+                    'color': 'orange-500',
                     'date' : '2015/04/23 11:14:38'
                 }
             ],
@@ -2808,13 +2294,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 12,
                     'name' : 'Remote payment accepted',
-                    'color': 'mat-green-500-bg',
+                    'color': 'green-500',
                     'date' : '2015/07/15 15:48:00'
                 },
                 {
                     'id'   : 14,
                     'name' : 'Awaiting Cash-on-delivery payment',
-                    'color': 'mat-blue-500-bg',
+                    'color': 'blue-500',
                     'date' : '2015/11/08 18:30:15'
                 }
             ],
@@ -2892,13 +2378,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 5,
                     'name' : 'Delivered',
-                    'color': 'mat-green-800-bg',
+                    'color': 'green-800',
                     'date' : '2016/05/02 09:53:55'
                 },
                 {
                     'id'   : 2,
                     'name' : 'Payment accepted',
-                    'color': 'mat-green-500-bg',
+                    'color': 'green-500',
                     'date' : '2015/07/11 05:33:31'
                 }
             ],
@@ -2976,13 +2462,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 9,
                     'name' : 'On pre-order (paid)',
-                    'color': 'mat-purple-300-bg',
+                    'color': 'purple-300',
                     'date' : '2016/02/26 14:15:38'
                 },
                 {
                     'id'   : 4,
                     'name' : 'Shipped',
-                    'color': 'mat-purple-500-bg',
+                    'color': 'purple-500',
                     'date' : '2015/10/17 03:32:39'
                 }
             ],
@@ -3060,13 +2546,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 10,
                     'name' : 'Awaiting bank wire payment',
-                    'color': 'mat-blue-500-bg',
+                    'color': 'blue-500',
                     'date' : '2015/09/01 20:50:07'
                 },
                 {
                     'id'   : 12,
                     'name' : 'Remote payment accepted',
-                    'color': 'mat-green-500-bg',
+                    'color': 'green-500',
                     'date' : '2016/02/13 21:19:04'
                 }
             ],
@@ -3144,13 +2630,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 6,
                     'name' : 'Canceled',
-                    'color': 'mat-pink-500-bg',
+                    'color': 'pink-500',
                     'date' : '2015/03/31 03:01:12'
                 },
                 {
                     'id'   : 8,
                     'name' : 'Payment error',
-                    'color': 'mat-red-900-bg',
+                    'color': 'red-900',
                     'date' : '2016/03/11 18:53:35'
                 }
             ],
@@ -3228,13 +2714,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 7,
                     'name' : 'Refunded',
-                    'color': 'mat-red-500-bg',
+                    'color': 'red-500',
                     'date' : '2015/12/29 15:34:46'
                 },
                 {
                     'id'   : 11,
                     'name' : 'Awaiting PayPal payment',
-                    'color': 'mat-blue-500-bg',
+                    'color': 'blue-500',
                     'date' : '2015/07/14 19:10:43'
                 }
             ],
@@ -3312,13 +2798,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 1,
                     'name' : 'Awaiting check payment',
-                    'color': 'mat-blue-500-bg',
+                    'color': 'blue-500',
                     'date' : '2015/12/21 10:42:21'
                 },
                 {
                     'id'   : 6,
                     'name' : 'Canceled',
-                    'color': 'mat-pink-500-bg',
+                    'color': 'pink-500',
                     'date' : '2016/02/11 05:58:55'
                 }
             ],
@@ -3396,13 +2882,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 9,
                     'name' : 'On pre-order (paid)',
-                    'color': 'mat-purple-300-bg',
+                    'color': 'purple-300',
                     'date' : '2015/06/20 08:37:46'
                 },
                 {
                     'id'   : 2,
                     'name' : 'Payment accepted',
-                    'color': 'mat-green-500-bg',
+                    'color': 'green-500',
                     'date' : '2015/01/01 01:42:21'
                 }
             ],
@@ -3480,13 +2966,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 5,
                     'name' : 'Delivered',
-                    'color': 'mat-green-800-bg',
+                    'color': 'green-800',
                     'date' : '2015/03/23 00:18:52'
                 },
                 {
                     'id'   : 3,
                     'name' : 'Preparing the order',
-                    'color': 'mat-orange-500-bg',
+                    'color': 'orange-500',
                     'date' : '2015/03/22 04:48:12'
                 }
             ],
@@ -3564,13 +3050,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 6,
                     'name' : 'Canceled',
-                    'color': 'mat-pink-500-bg',
+                    'color': 'pink-500',
                     'date' : '2016/03/24 22:56:35'
                 },
                 {
                     'id'   : 4,
                     'name' : 'Shipped',
-                    'color': 'mat-purple-500-bg',
+                    'color': 'purple-500',
                     'date' : '2016/04/09 13:33:26'
                 }
             ],
@@ -3648,13 +3134,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 7,
                     'name' : 'Refunded',
-                    'color': 'mat-red-500-bg',
+                    'color': 'red-500',
                     'date' : '2015/08/10 17:14:57'
                 },
                 {
                     'id'   : 5,
                     'name' : 'Delivered',
-                    'color': 'mat-green-800-bg',
+                    'color': 'green-800',
                     'date' : '2016/03/30 01:38:14'
                 }
             ],
@@ -3732,13 +3218,13 @@ export class ECommerceFakeDb
                 {
                     'id'   : 10,
                     'name' : 'Awaiting bank wire payment',
-                    'color': 'mat-blue-500-bg',
+                    'color': 'blue-500',
                     'date' : '2015/05/19 11:09:56'
                 },
                 {
                     'id'   : 12,
                     'name' : 'Remote payment accepted',
-                    'color': 'mat-green-500-bg',
+                    'color': 'green-500',
                     'date' : '2015/03/27 05:02:33'
                 }
             ],
