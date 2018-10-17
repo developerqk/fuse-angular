@@ -63,7 +63,11 @@ $custom_palettes: (
 
 // Force the input field font sizes to 16px
 $typography: mat-typography-config(
-    $input: mat-typography-level(16px, 1.125, 400)
+    $font-family: 'Nunito, Helvetica Neue, Arial, sans-serif',
+    $title: mat-typography-level(20px, 32px, 600),
+    $body-2: mat-typography-level(14px, 24px, 600),
+    $button: mat-typography-level(14px, 14px, 600),
+    $input: mat-typography-level(16px, 1.125, 400) // line-height must be unitless !!!
 );
 
 // Setup the typography
@@ -82,6 +86,8 @@ $typography: mat-typography-config(
 @import "src/app/main/apps/chat/chat.theme";
 @import "src/app/main/apps/contacts/contacts.theme";
 @import "src/app/main/apps/dashboards/project/project.theme";
+@import "src/app/main/apps/e-commerce/orders/orders.theme";
+@import "src/app/main/apps/e-commerce/products/products.theme";
 @import "src/app/main/apps/file-manager/file-manager.theme";
 @import "src/app/main/apps/mail/mail.theme";
 @import "src/app/main/apps/mail-ngrx/mail.theme";
@@ -108,10 +114,12 @@ $typography: mat-typography-config(
 @import "src/app/main/pages/profile/tabs/about/about.theme";
 @import "src/app/main/pages/profile/tabs/photos-videos/photos-videos.theme";
 @import "src/app/main/pages/profile/tabs/timeline/timeline.theme";
+@import "src/app/main/pages/search/classic/search-classic.theme";
+@import "src/app/main/pages/search/modern/search-modern.theme";
 @import "src/app/main/pages/faq/faq.theme";
 @import "src/app/main/pages/knowledge-base/knowledge-base.theme";
 
-@import "src/app/main/documentation/components/cards/cards.theme";
+@import "src/app/main/ui/cards/cards.theme";
 
 @import "src/app/main/angular-material-elements/example-viewer/example-viewer.theme";
 
@@ -128,6 +136,8 @@ $typography: mat-typography-config(
     @include chat-theme($theme);
     @include contacts-theme($theme);
     @include dashboards-project-theme($theme);
+    @include e-commerce-orders-theme($theme);
+    @include e-commerce-products-theme($theme);
     @include file-manager-theme($theme);
     @include mail-theme($theme);
     @include mail-ngrx-theme($theme);
@@ -155,11 +165,13 @@ $typography: mat-typography-config(
     @include profile-about-theme($theme);
     @include profile-photos-videos-theme($theme);
     @include profile-timeline-theme($theme);
+    @include search-classic-theme($theme);
+    @include search-modern-theme($theme);
     @include faq-theme($theme);
     @include knowledge-base-theme($theme);
 
-    // Docs
-    @include docs-components-cards-theme($theme);
+    // UI
+    @include ui-cards-theme($theme);
 
     // Example Viewer
     @include example-viewer-theme($theme);

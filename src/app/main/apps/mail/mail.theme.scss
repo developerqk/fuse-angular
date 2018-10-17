@@ -28,6 +28,16 @@
                     }
                 }
             }
+
+            .content-card {
+
+                .toolbar {
+
+                    .toolbar-separator {
+                        background: map-get($foreground, divider);
+                    }
+                }
+            }
         }
     }
 
@@ -125,6 +135,24 @@
 
         .mail-attachments {
             border-top-color: map-get($foreground, divider);
+        }
+    }
+
+    // Compose dialog
+    .mail-compose-dialog {
+
+        .mat-dialog-container {
+
+            .compose-form {
+
+                .attachment-list {
+
+                    .attachment {
+                        background-color: map-get($background, card);
+                        border-color: map-get($foreground, divider);
+                    }
+                }
+            }
         }
     }
 }

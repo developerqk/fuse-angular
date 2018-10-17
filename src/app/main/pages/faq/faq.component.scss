@@ -15,10 +15,6 @@ faq {
         }
 
         .hero-text {
-            margin-bottom: 32px;
-
-            @include media-breakpoint-down('xs') {
-            }
 
             h1 {
                 color: white;
@@ -29,7 +25,7 @@ faq {
                 margin-top: 0;
                 margin-bottom: 16px;
 
-                @include media-breakpoint-down('xs') {
+                @include media-breakpoint('xs') {
                     font-size: 24px;
                 }
             }
@@ -41,6 +37,8 @@ faq {
             height: 56px;
             line-height: 56px;
             padding: 18px;
+            border-radius: 28px;
+            overflow: hidden;
 
             input {
                 height: 56px;

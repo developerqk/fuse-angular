@@ -5,8 +5,8 @@ scrumboard-board-card {
     display: block;
     width: 100%;
     margin: 16px 0 !important;
-    border-radius: 2px;
-    transition: box-shadow 150ms ease;
+    border-radius: 4px;
+    border: 1px solid;
     cursor: pointer;
 
     .list-card-sort-handle {
@@ -34,7 +34,7 @@ scrumboard-board-card {
 
         .list-card-name {
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 12px;
         }
 
